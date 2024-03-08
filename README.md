@@ -1,6 +1,6 @@
 <img align="right" height="250" width="375" alt="" src="https://github.com/AdityaKonda6/AdityaKonda6/blob/main/giphy2.webp" />
 
-## Hey there 👋, I'm [Aditya!]([https://github.com/AdityaKonda6])
+## Hey there 👋, I'm [<a href="https://my-portfolio-aditya-konda-beta.vercel.app/">Aditya!</a>]([https://github.com/AdityaKonda6])
 
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/AdityaKonda7)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-adi-konda/)
