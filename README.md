@@ -70,7 +70,12 @@ Like My Work?
   <br />
   <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=adityakonda6&hide_border=true" />
 </details>
+<details>
+  <summary><b>☄️ LeetCode Stats</b></summary>
 
+  <br />
+   <p align="center"><img align="center" src="https://leetcard.jacoblin.cool/adityakonda04?theme=wtf&font=Coda%20Caption&ext=heatmap" /></p>
+   </details>
 <details>
   <br />
   <summary><b>⚙️ Things I use to get stuff done</b></summary>
