@@ -8,15 +8,15 @@
 
 ### Glad to see you here! &nbsp; ![](https://visitor-badge.glitch.me/badge?page_id=adityakonda.adityakonda&style=flat-square&color=0088cc)
 
-I am a Full Stack Developer currently in college studying in IT with a mission to revolutionize how the world hires with AI. 🚀
+I want to be a Software Developer but I am currently in college studying in IT with a mission to revolutionize how the world hires with AI. 🚀
 
-I have a passion for problem-solving and pioneering first-principle thinking, driven by purpose and fueled by the challenge of finding solutions, with a strong foundation in Javascript, Nodejs, MongoDB, React, Nextjs, AWS, etc. I've led diverse tech teams covering Frontend, Backend, Machine Learning and DevOps and building scalable products from scratch with the commitment to making a positive impact through technology.
+I have a passion for problem-solving and pioneering first-principle thinking, driven by purpose and fueled by the challenge of finding solutions, with a strong foundation in Java, Python, SQL etc. I've led diverse tech teams covering Middleware, Backend and building scalable products from scratch with the commitment to making a positive impact through technology.
 
 I'm an explorer of new tech, an avid learner, and a problem-solver at heart. When I'm not in code, you'll find me watching tech-related YouTube videos, fueling my curiosity.
 
 Feel free to connect with me @kondaaditya for all things tech or just to say hello! Let's shape the future of tech together. 🌟
 
-Joined Github **2** years ago.
+Joined Github **3** years ago.
 
 Since then I pushed **20**+ commits, opened **15**+ issues, submitted **3**+ pull requests, created **64**+ gists and contributed to **18**+ public repositories.
 
@@ -32,7 +32,7 @@ Like My Work?
 
 ### Talking about Personal Stuff:
 
-- 🛠 &nbsp; I’m currently working with JS, React, MongoDB, etc.
+- 🛠 &nbsp; I’m currently working with Java, SQL, Springboot, Python etc.
 - 🚀 &nbsp; I’m currently exploring ML, Gen AI, etc.
 - 💬 &nbsp; Ask me anything [here](https://github.com/AdityaKonda6/MyGitHub-Intro/issues)! I am happy to help.
 - 👾 &nbsp; Fun fact: Equal is Not Always Equal in JS.
