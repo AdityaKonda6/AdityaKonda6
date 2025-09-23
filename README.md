@@ -104,6 +104,9 @@ Like My Work?
 
 <div align="center">
 
+[![Github Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AdityaKonda6&theme=github-dark)](https://github.com/im-ukr)
+
+
 ### Show some ❤️ by starring some of the repositories!
 ### <a href="https://adityakonda04.vercel.app/">My Portfolio</a>
 </div>
