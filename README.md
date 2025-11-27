@@ -104,6 +104,21 @@ Like My Work?
 
 <div align="center">
 
+<table>
+  <tr>
+    <td>
+      <a href="https://github.com/AdityaKonda6">
+        <img src="https://github-readme-stats.vercel.app/api?username=AdityaKonda6&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917" alt="Aditya Konda GitHub stats" />
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/AdityaKonda6">
+        <img src="https://nirzak-streak-stats.vercel.app/?user=AdityaKonda6&theme=dark&background=1C1917&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&ring=0891b2&fire=0891b2&stroke=0891b2" alt="GitHub Streak Stats" />
+      </a>
+    </td>
+  </tr>
+</table>
+
 [![Github Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=AdityaKonda6&theme=github-dark)](https://github.com/im-ukr)
 
 
