@@ -9,36 +9,48 @@
 
 ### Glad to see you here! &nbsp; ![](https://visitor-badge.glitch.me/badge?page_id=adityakonda.adityakonda&style=flat-square&color=0088cc)
 
-I’m a **2025 IT Graduate** passionate about **DevOps, Cloud, and Software Development** 🚀.  
-My mission? To **bridge the gap between development and operations**—building scalable systems, automating workflows, and ensuring quality from code to deployment.
+I’m a **2025 IT Graduate** passionate about **DevOps, Cloud, and SRE** 🚀 who thrives on building **reliable, scalable, and automated systems**.  
+I don’t work as a software developer now — instead, I focus entirely on:
 
-With a strong foundation in **Java, SQL, Linux**, and hands-on experience with **CI/CD pipelines, Selenium automation, cloud services, and Android development**, I thrive in solving problems end-to-end—from writing code to deploying it in production.
+- Infrastructure automation  
+- CI/CD pipelines  
+- Cloud orchestration  
+- Containerized workloads  
+- Monitoring, observability & SRE practices  
+- Security, performance & platform stability 
 
-Recently, at **CWD Limited**, I worked on:
-- **Automation Testing Frameworks** (Selenium, Java, Maven)
-- **Linux-based system configurations & debugging**
-- **Hardware-software integration testing**
-- API testing with Postman  
-…and in the process, strengthened my DevOps skill set.
-
-💡 Curious mind. Fast learner. Always ready to build, break, and rebuild—better.
+💡 For me, DevOps is more than tools — it’s a mindset of **simplicity, automation, efficiency, and reliability**.
 
 ---
 
-### 🚀 What I’m Working On:
-- Building **DevOps projects** (Jenkins, Docker, Kubernetes, AWS, Ansible)
-- Enhancing **automation frameworks** for testing & deployment
-- Crafting **Android apps** and backend services
-- Expanding my **Linux administration** skills
+# 🧩 **Who I Am (Personality & Lifestyle)**
 
+Outside tech, I’m a **fitness lover, biker, and motovlogging enthusiast**.  
+
+- I live by discipline through the **Gym**,  
+- Freedom through **Bike Rides**,  
+- and expression through **Motovlogging**.
+  
+Long rides, mountain roads, solo travel, exploring new places…  
+that’s where I disconnect from noise and reconnect with myself.
+
+I believe in **continuous improvement**, both in engineering systems and in life.
+---
+
+# ⚙️ **What I’m Focused On**
+- Building production-ready **DevOps pipelines**
+- Deploying workloads on **Kubernetes & AWS**
+- Platform engineering with **Terraform, GitOps & automation**
+- Infrastructure observability with **Prometheus, Grafana & CloudWatch**
 ---
 
 ### 💼 My Tech Stack:
+<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/aws/aws.png"></code>
+<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/kubernetes/kubernetes.png"></code>
+<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/terraform/terraform.png"></code>
+<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/linux/linux.png"></code>
 <code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/java/java.png" alt="Java"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/linux/linux.png" alt="Linux"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/docker/docker.png" alt="Docker"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/kubernetes/kubernetes.png" alt="Kubernetes"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/aws/aws.png" alt="AWS"></code>
+<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/jenkins/jenkins.png"></code>
 <code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/python/python.png" alt="Python"></code>
 <code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/javascript/javascript.png" alt="JavaScript"></code>
 <code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/react/react.png" alt="React"></code>
@@ -53,11 +65,11 @@ Recently, at **CWD Limited**, I worked on:
 <img align="right" height="250" width="375" alt="" src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/coder.gif" />
 
 ### 📌 Highlights:
-- 🛠 Built **dynamic Selenium automation scripts** integrated with Maven
-- 🚀 Created & deployed **full-stack and Android applications**
-- 🐧 Comfortable with **Linux system administration & shell scripting**
-- 📦 Implemented CI/CD workflows for smoother deployments
-- ☁️ Learning & applying **cloud infrastructure concepts**
+- 🔧 I build **AWS + Kubernetes** environments from scratch  
+- 🎯 I automate everything using **Terraform, GitHub Actions, CI/CD**  
+- 🔥 Obsessed with system reliability, monitoring & SRE culture  
+- 🧩 Love solving infra challenges & optimizing cloud costs  
+- 🧭 Live a lifestyle of ✨ **fitness + bikes + discipline + freedom**  
 
 --
 
@@ -68,7 +80,7 @@ Recently, at **CWD Limited**, I worked on:
 
 ---
 
-💬 Always open to collaborations, tech discussions, and exploring new opportunities in **DevOps, Cloud, and Software Development**.
+💬 Always open to collaborations, tech discussions, and exploring new opportunities in **DevOps, Cloud, and SRE**.
 
 
 Like My Work?
