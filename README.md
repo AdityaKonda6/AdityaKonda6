@@ -68,28 +68,6 @@ Recently, at **CWD Limited**, I worked on:
 
 ---
 
-### 📊 GitHub Stats:
-<details>
-  <summary><b>⚡ GitHub Stats</b></summary>
-  <br />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=adityakonda6&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adityakonda6&show_icons=true&hide_border=true&layout=compact&langs_count=8"/>
-</details>
-
-<details>
-  <summary><b>🔥 GitHub Streaks</b></summary>
-  <br />
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=adityakonda6&hide_border=true" />
-</details>
-
-<details>
-  <summary><b>☄️ LeetCode Stats</b></summary>
-  <br />
-   <p align="center"><img align="center" src="https://leetcard.jacoblin.cool/adityakonda04?theme=wtf&font=Coda%20Caption&ext=heatmap" /></p>
-</details>
-
----
-
 💬 Always open to collaborations, tech discussions, and exploring new opportunities in **DevOps, Cloud, and Software Development**.
 
 
