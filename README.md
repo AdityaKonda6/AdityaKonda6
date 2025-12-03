@@ -1,10 +1,3 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/github-snake.svg" />
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/github-snake.svg" />
-</picture>
-
-
 ## Hey there 👋, I'm [<a href="https://adityakonda04.vercel.app/">Aditya!</a>](https://github.com/AdityaKonda6)
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-adi-konda/)
@@ -26,6 +19,14 @@ I don’t work as a software developer now — instead, I focus entirely on:
 - Security, performance & platform stability 
 
 💡 For me, DevOps is more than tools — it’s a mindset of **simplicity, automation, efficiency, and reliability**.
+
+---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/github-snake.svg" />
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/github-snake.svg" />
+</picture>
 
 ---
 
