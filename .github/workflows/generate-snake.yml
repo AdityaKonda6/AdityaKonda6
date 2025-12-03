@@ -1,9 +1,13 @@
 name: Generate Snake
 
+# give workflow write permission to repository contents (required for pushes)
+permissions:
+  contents: write
+
 on:
-  workflow_dispatch:    # allows manual run
+  workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"  # daily at 00:00 UTC (optional)
+    - cron: "0 0 * * *"
 
 jobs:
   build:
@@ -11,6 +15,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # allow the workflow to use the token for pushing
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Generate snake images
         uses: Platane/snk@v3
