@@ -36,8 +36,6 @@ jobs:
         run: |
           mkdir -p tools
           cat > tools/generate-yearly-contribs.js <<'JS'
-/* Paste the Node script from the instructions (the full script below) */
-JS
 
       - name: Install and run contribution SVG generator
         env:
