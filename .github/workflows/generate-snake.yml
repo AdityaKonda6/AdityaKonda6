@@ -1,13 +1,12 @@
-name: Generate Snake
+name: Generate Snake + Yearly Contrib SVGs
 
-# give workflow write permission to repository contents (required for pushes)
 permissions:
-  contents: write
+  contents: write   # required so the workflow can commit files
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"  # daily at 00:00 UTC (optional)
 
 jobs:
   build:
@@ -16,9 +15,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # allow the workflow to use the token for pushing
           persist-credentials: true
           fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
       - name: Generate snake images
         uses: Platane/snk@v3
@@ -29,9 +32,27 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9&color_background=#aaaaaa
 
+      - name: Add script to generate yearly contribution SVGs
+        run: |
+          mkdir -p tools
+          cat > tools/generate-yearly-contribs.js <<'JS'
+/* Paste the Node script from the instructions (the full script below) */
+JS
+
+      - name: Install and run contribution SVG generator
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          YEARS: "2025,2024,2023"    # <-- edit this list of years you want generated (comma-separated)
+        run: |
+          node -v
+          npm --version || true
+          # run the generator (script was created in previous step)
+          node tools/generate-yearly-contribs.js
+
       - name: Commit & push generated files to output branch
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Generate Snake"
+          commit_message: "Generate Snake + yearly contribution SVGs"
           branch: output
           file_pattern: dist/*
