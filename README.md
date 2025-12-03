@@ -1,3 +1,20 @@
+<h3>Contribution calendars</h3>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/contrib-2025.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/contrib-2025.svg" />
+  <img alt="contribution calendar 2025" src="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/contrib-2025.svg" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/contrib-2024.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/contrib-2024.svg" />
+  <img alt="contribution calendar 2024" src="https://raw.githubusercontent.com/AdityaKonda6/AdityaKonda6/output/dist/contrib-2024.svg" />
+</picture>
+
+<!-- add more pictures for other years -->
+
+
 ## Hey there 👋, I'm [<a href="https://adityakonda04.vercel.app/">Aditya!</a>](https://github.com/AdityaKonda6)
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-adi-konda/)
