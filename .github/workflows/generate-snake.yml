@@ -1,12 +1,12 @@
 name: Generate Snake + Yearly Contrib SVGs
 
 permissions:
-  contents: write   # required so the workflow can commit files
+  contents: write
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"  # daily at 00:00 UTC (optional)
+    - cron: "0 0 * * *"
 
 jobs:
   build:
@@ -32,25 +32,129 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9&color_background=#aaaaaa
 
-      - name: Add script to generate yearly contribution SVGs
+      - name: Create contribution generator script (temporary file)
         run: |
-          mkdir -p tools
-          cat > tools/generate-yearly-contribs.js <<'JS'
+          cat > /tmp/generate-yearly-contribs.js <<'JS'
+/* BEGIN: generate-yearly-contribs.js */
+const fs = require('fs');
+const path = require('path');
+const fetch = globalThis.fetch || require('node-fetch');
 
-      - name: Install and run contribution SVG generator
+const GH_TOKEN = process.env.GITHUB_TOKEN;
+const USERNAME = process.env.GITHUB_USERNAME;
+const YEARS = (process.env.YEARS || '').split(',').map(s=>s.trim()).filter(Boolean);
+if (!GH_TOKEN || !USERNAME || YEARS.length===0) {
+  console.error('Set GITHUB_TOKEN, GITHUB_USERNAME and YEARS (comma list) env vars.');
+  process.exit(1);
+}
+
+const GRAPHQL_URL = 'https://api.github.com/graphql';
+
+async function fetchYearContributions(year) {
+  const from = `${year}-01-01T00:00:00Z`;
+  const to   = `${year}-12-31T23:59:59Z`;
+  const query = `
+    query($login:String!, $from:DateTime!, $to:DateTime!) {
+      user(login: $login) {
+        contributionsCollection(from: $from, to: $to) {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                date
+                contributionCount
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+  const resp = await fetch(GRAPHQL_URL, {
+    method: 'POST',
+    headers: {
+      Authorization: `bearer ${GH_TOKEN}`,
+      'Content-Type': 'application/json',
+      'User-Agent': 'generate-yearly-contribs-script'
+    },
+    body: JSON.stringify({ query, variables: { login: USERNAME, from, to } })
+  });
+  if (!resp.ok) {
+    const txt = await resp.text();
+    throw new Error(`GraphQL request failed: ${resp.status} ${resp.statusText}: ${txt}`);
+  }
+  const data = await resp.json();
+  if (data.errors) throw new Error(JSON.stringify(data.errors));
+  return data.data.user.contributionsCollection.contributionCalendar;
+}
+
+function colorForCount(count) {
+  if (count <= 0) return '#ebedf0';
+  if (count === 1) return '#c6e48b';
+  if (count <= 3) return '#7bc96f';
+  if (count <= 7) return '#239a3b';
+  return '#196127';
+}
+
+function renderSVG(calendar, year) {
+  const weeks = calendar.weeks || [];
+  const cellSize = 12;
+  const cellSpacing = 2;
+  const width = weeks.length * (cellSize + cellSpacing);
+  const height = 7 * (cellSize + cellSpacing) + 30;
+  const title = `${year} — ${calendar.totalContributions} contributions`;
+  const parts = [];
+  parts.push(`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${title}">`);
+  parts.push(`<style>text{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;font-size:12px;fill:#444}</style>`);
+  parts.push(`<text x="0" y="14">${title}</text>`);
+  parts.push(`<g transform="translate(0,20)">`);
+  weeks.forEach((week, i) => {
+    week.contributionDays.forEach((day, dIdx) => {
+      const x = i * (cellSize + cellSpacing);
+      const y = dIdx * (cellSize + cellSpacing);
+      const fill = colorForCount(day.contributionCount);
+      const date = day.date;
+      const count = day.contributionCount;
+      parts.push(`<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" rx="2" ry="2" fill="${fill}"><title>${date}: ${count} contribution${count===1?'':'s'}</title></rect>`);
+    });
+  });
+  parts.push(`</g></svg>`);
+  return parts.join('\n');
+}
+
+(async () => {
+  try {
+    const outDir = path.join(process.cwd(), 'dist');
+    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+    for (const year of YEARS) {
+      console.log('Fetching', year);
+      const calendar = await fetchYearContributions(year);
+      const svg = renderSVG(calendar, year);
+      fs.writeFileSync(path.join(outDir, `contrib-${year}.svg`), svg, 'utf8');
+      console.log('Wrote contrib-' + year + '.svg');
+    }
+    console.log('All done.');
+  } catch (e) {
+    console.error(e);
+    process.exit(1);
+  }
+})();
+/* END: generate-yearly-contribs.js */
+JS
+
+      - name: Run contribution generator
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
-          YEARS: "2025,2024,2023"    # <-- edit this list of years you want generated (comma-separated)
+          YEARS: "2025,2024,2023"
         run: |
-          node -v
-          npm --version || true
-          # run the generator (script was created in previous step)
-          node tools/generate-yearly-contribs.js
+          node /tmp/generate-yearly-contribs.js
 
-      - name: Commit & push generated files to output branch
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Generate Snake + yearly contribution SVGs"
-          branch: output
-          file_pattern: dist/*
+      - name: Commit generated files and push to output branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A dist
+          git commit -m "Generate Snake + yearly contribution SVGs" || echo "No changes to commit"
+          # push current HEAD to update output branch
+          git push origin HEAD:output --force
