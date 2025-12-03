@@ -1,0 +1,29 @@
+name: Generate Snake
+
+on:
+  workflow_dispatch:    # allows manual run
+  schedule:
+    - cron: "0 0 * * *"  # daily at 00:00 UTC (optional)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate snake images
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9&color_background=#aaaaaa
+
+      - name: Commit & push generated files to output branch
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Generate Snake"
+          branch: output
+          file_pattern: dist/*
