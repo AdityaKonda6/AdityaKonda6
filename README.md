@@ -52,23 +52,75 @@ I believe in **continuous improvement**, both in engineering systems and in life
 - Infrastructure observability with **Prometheus, Grafana & CloudWatch**
 ---
 
-### 💼 My Tech Stack:
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/aws/aws.png"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/kubernetes/kubernetes.png"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/terraform/terraform.png"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/linux/linux.png"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/java/java.png" alt="Java"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/jenkins/jenkins.png"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/python/python.png" alt="Python"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/javascript/javascript.png" alt="JavaScript"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/react/react.png" alt="React"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/sql/sql.png" alt="SQL"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/git/git.png" alt="Git"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" alt="nodejs"></code>
-<code><img height="27" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTTzPAw-55ssm1Im594xYZ9eRQu2JylrkYLg&usqp=CAU" alt="mongodb"></code>
-<code><img height="27" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" alt="terminal"></code>
+### 💼 My Tech Stack
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center"><b>☁️ Cloud & IaC</b></td>
+    <td>
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/aws/aws.png" title="AWS">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/azure/azure.png" title="Azure">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/google-cloud/google-cloud.png" title="Google Cloud">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/terraform/terraform.png" title="Terraform">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/ansible/ansible.png" title="Ansible">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>📦 Containers & Orchestration</b></td>
+    <td>
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/kubernetes/kubernetes.png" title="Kubernetes">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/docker/docker.png" title="Docker">
+      <img height="27" src="https://raw.githubusercontent.com/cncf/artwork/master/projects/containerd/icon/color/containerd-icon-color.png" title="containerd">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/nginx/nginx.png" title="Nginx">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>🚀 CI/CD & VCS</b></td>
+    <td>
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/jenkins/jenkins.png" title="Jenkins">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/git/git.png" title="Git">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/github/github.png" title="GitHub">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/gitlab/gitlab.png" title="GitLab">
+      <img height="27" src="https://avatars.githubusercontent.com/u/365556?s=200&v=4" title="Bitbucket">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>🐧 OS & Shell</b></td>
+    <td>
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/linux/linux.png" title="Linux">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/bash/bash.png" title="Bash">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/terminal/terminal.png" title="Terminal">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>💻 Languages & Frameworks</b></td>
+    <td>
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/python/python.png" title="Python">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/go/go.png" title="Go">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/java/java.png" title="Java">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/javascript/javascript.png" title="JavaScript">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/nodejs/nodejs.png" title="Node.js">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/react/react.png" title="React">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>🗄️ Databases</b></td>
+    <td>
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/sql/sql.png" title="SQL">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/mongodb/mongodb.png" title="MongoDB">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/mysql/mysql.png" title="MySQL">
+      <img height="27" src="https://raw.githubusercontent.com/github/explore/master/topics/postgresql/postgresql.png" title="PostgreSQL">
+    </td>
+  </tr>
+</table>
+
+</div>
+
 
 ---
+
 
 <img align="right" height="250" width="375" alt="" src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/coder.gif" />
 
