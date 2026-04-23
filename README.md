@@ -14,7 +14,7 @@
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-adityakonda04.vercel.app-00d4ff?style=for-the-badge&labelColor=0d1117)](https://adityakonda04.vercel.app/)&nbsp;
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-adityakonda.vercel.app-00d4ff?style=for-the-badge&labelColor=0d1117)](https://adityakonda.vercel.app/)&nbsp;
 [![Portfolio](https://img.shields.io/badge/%E2%9C%8D%20SRE-CloudOps-Blogs?style=flat-square)](https://srecloudops.in/)&nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-adi-konda/)&nbsp;
 [![Twitter](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/AdityaKonda7)&nbsp;
@@ -43,7 +43,7 @@ ROLE      = "Junior SRE | DevOps Engineer"
 COMPANY   = "Dorian Mode Technologies"
 LOCATION  = "Mumbai, India 🇮🇳"
 EDUCATION = "B.E. Information Technology — 2025"
-PORTFOLIO = "adityakonda04.vercel.app"
+PORTFOLIO = "adityakonda.vercel.app"
 FOCUS     = "Reliability. Automation. Scale."
 STATUS    = "Building systems that wake me up — not page me."
 ```
@@ -285,7 +285,7 @@ Mumbai, India &nbsp;·&nbsp; Remote / Hybrid / Relocation welcomed
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Now-00d4ff?style=for-the-badge&labelColor=0d1117)](https://adityakonda04.vercel.app/)&nbsp;
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Now-00d4ff?style=for-the-badge&labelColor=0d1117)](https://adityakonda.vercel.app/)&nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-adi-konda/)&nbsp;
 [![Email](https://img.shields.io/badge/Gmail-Drop_a_Mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adityakonda04@gmail.com)
 
